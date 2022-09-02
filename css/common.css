@@ -1,0 +1,428 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/******************************************************
+
+PC,タブレットの設定 480px以上の場合に適用
+
+*******************************************************/
+
+/* 全体の設定 */
+body {
+	width: 100%;
+	margin: 0;
+	font-family: 'BIZ UDPGothic', "meiryo","sans-serif","lucida grande","hiragino kaku gothic proN";
+	font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+	min-width: 1200px;
+	color: #ffffff;
+	background-color: #000;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+	  font-family: 'Shippori Mincho B1', serif;
+	}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
+	}
+
+img,a img {
+	border: none;
+	}
+
+h1 img,h2 img,h3 img {
+	display: block;
+	}
+
+* {
+	box-sizing: border-box;
+	}
+
+.inner {
+	width: 1200px;
+	margin: 0 auto;
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+
+.pc {
+	display: block;
+	}
+
+.sp {
+	display: none;
+	}
+
+.left {
+	float: left;
+	}
+
+.right {
+	float: right;
+	}
+
+p {
+	line-height: 1.8;
+	}
+
+
+/* ヘッダー */
+#header {
+	height: 170px;
+	position: relative;
+	background-color: #000;
+	}
+
+#header_logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20px;
+	margin: auto;
+	}
+
+#header_contact {
+	position: absolute;
+	right: 70px;
+	top: 0;
+	}
+
+
+/* グローバルナビ */
+#global-navi {
+	width: 400px;
+	height: 60px;
+	}
+
+#global-navi ul li {
+	width: 100px;
+	text-align: center;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	}
+
+#global-navi ul li a {
+	color: #FFFFFF;
+	}
+
+
+/* グローバルナビ固定 */
+#global-navi_fix {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: #000;
+	box-shadow: 0 0 10px 3px #BBBBBB;
+	}
+
+#global-navi_fix ul {
+	width: 400px;
+	}
+
+#global-navi_fix ul li {
+	float: left;
+	width: 100px;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	}
+
+#global-navi_fix li a {
+	color: #FFF80A;
+	}
+
+#global-navi_logo {
+	position: absolute;
+	left: 70px;
+	top: 5px;
+	}
+
+#global-navi_contact_fix {
+	position: absolute;
+	right: 70px;
+	top: 0;
+	}
+
+
+/* フッター */
+#footer01 {
+	width: 100%;
+	height: 50px;
+	background-color: #DAD2CA;
+	}
+
+#footer01 ul {
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+	}
+
+#footer01 ul li {
+	width: 100px;
+	text-align: center;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	}
+
+#footer01 ul li a {
+	color: #000000;
+	}
+
+#footer02 {
+	background-color: #F7EC09;
+	height: 630px;
+	}
+
+#footer02 .inner {
+	position: relative;
+	}
+
+#footer02 #footer_logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30px;
+	margin: auto;
+	}
+
+#footer02 .header {
+	font-weight: bold;
+	}
+
+#footer02 p {
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+	}
+
+#trial_footer {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	}
+
+#footer_address {
+	width: 400px;
+	position: absolute;
+	top: 320px;
+	right: 700px;
+	margin: auto;
+	text-align: center;
+	border-right: 1px solid #FFFFFF;
+	height: 60px;
+	}
+
+#footer_telephone {
+	position: absolute;
+	width: 200px;
+	text-align: center;
+	border-right: 1px solid #FFFFFF;
+	top: 320px;
+	left: 500px;
+	}
+
+#footer_mail {
+	position: absolute;
+	width: 200px;
+	text-align: center;
+	border-right: 1px solid #FFFFFF;
+	top: 320px;
+	left: 700px;
+	}
+
+#footer02 #info {
+	position: absolute;
+	top: 400px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+	}
+
+#footer02 ul {
+	position: absolute;
+	top: 500px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 290px;
+	height: 50px;
+	}
+
+#footer02 ul li {
+	float: left;
+	margin-left: 30px;
+	}
+
+#footer02 ul li:first-child {
+	margin-left: 0;
+	}
+
+#footer02 ul li .social-icon {
+	color: #000000;
+	margin-left: 0;
+	width: 50px;
+	height: 50px;
+	}
+
+#footer03 {
+	height: 50px;
+	}
+
+#footer03 p {
+	line-height: 50px;
+	text-align: center;
+	}
+
+
+/******************************************************
+
+SPの設定 768px以下の場合に適用
+
+*******************************************************/
+
+@media screen and (max-width: 768px){
+
+/* 全体の設定 */
+body {
+	color: #222222;
+	min-width: 100%;
+	max-width: 768px;
+	margin: 0;
+	font-size: 16px;
+	}
+
+.inner {
+	width: 100%;
+	margin: 0 auto;
+	}
+
+.pc {
+	display: none;
+	}
+
+.sp {
+	display: block;
+	}
+
+.left {
+	float: none;
+	}
+
+.right {
+	float: none;
+	}
+
+
+/* ヘッダー */
+#header {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	}
+
+#header_logo {
+	position: static;
+	padding-top: 10px;
+	width: 40%;
+	height: auto;
+	}
+
+
+/* グローバルナビ */
+#global-navi {
+	width: 100%;
+	}
+
+#global-navi ul li {
+	width: 25%;
+	}
+
+
+/* グローバルナビ固定 */
+global-navi_contact_fix {
+	display: none;
+	}
+
+
+
+/* フッター */
+#footer01 {
+	width: 100%;
+	height: 50px;
+	background-color: #DAD2CA;
+	}
+
+#footer01 ul {
+	width: 100%;
+	}
+
+#footer01 ul li {
+	width: 25%;
+	}
+
+#footer01 ul li a {
+	font-size: 14px;
+	}
+
+#footer02 {
+	background-color: #FFF80A;
+	height: auto;
+	text-align: center;
+	position: static;
+	}
+
+#trial_footer {
+	position: static;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	padding-top: 30px;
+	}
+
+#footer02 #footer_logo {
+	position: static;
+	width: 30%;
+	height: auto;
+	padding-top: 10px;
+	}
+
+#footer02 #info {
+	position: static;
+	font-size: 14px;
+	padding-bottom: 10px;
+	}
+
+#footer02 ul {
+	position: static;
+	width: 116px;
+	overflow: hidden;
+	padding-bottom: 10px;
+	}
+
+#footer02 ul li {
+	float: left;
+	margin-left: 10px;
+	}
+
+#footer02 ul li:first-child {
+	margin-left: 0;
+	}
+
+
+}
