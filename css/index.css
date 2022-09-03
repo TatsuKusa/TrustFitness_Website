@@ -158,6 +158,10 @@ h1 {
 	width: 525px;
 	} */
 
+#contents02 .pricing-column {
+	padding: 1% 1%;
+}
+
 #contents02 #trial {
 	margin-top: 65px;
 	}
@@ -176,6 +180,7 @@ h1 {
 	text-align: center;
 }
 #contents02 .body-text {
+	height: 130px;
 	padding: 10px 0 20px 0;
 }
 
